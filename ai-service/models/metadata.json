@@ -1,0 +1,23 @@
+{
+  "feature_cols": [
+    "completion_pct",
+    "total_duration_days",
+    "elapsed_days",
+    "days_remaining",
+    "daily_velocity",
+    "log_frequency",
+    "labor_count",
+    "budget_ratio",
+    "total_logs",
+    "category_encoded"
+  ],
+  "categories": [
+    "education",
+    "electricity",
+    "healthcare",
+    "housing",
+    "road",
+    "water"
+  ],
+  "model_version": "1.0.0"
+}
