@@ -22,7 +22,7 @@ const authenticate = async (req, res, next) => {
     const token = authHeader.split(' ')[1];
 
     // Verify and decode the token
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || "change_this_to_a_long_random_secret_in_production_min_32_chars");
 
     // Fetch fresh user data (in case role/status changed)
     const result = await db.query(

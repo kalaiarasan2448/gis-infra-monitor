@@ -6,7 +6,7 @@ const { Pool } = require('pg');
 
 // Create a connection pool - reuses DB connections instead of opening a new one each time
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.DATABASE_URL || "postgresql://neondb_owner:npg_oWuDNsYTC31Z@ep-dry-cell-ansdg7vt.c-6.us-east-1.aws.neon.tech/neondb?sslmode=require",
   max: 20,
   idleTimeoutMillis: 45000,
   connectionTimeoutMillis: 40000,
