@@ -93,7 +93,7 @@ function ProjectListItem({ project, isSelected, onClick }) {
         <div className="flex-1 min-w-0">
           <p className="font-medium text-slate-200 truncate">{project.name}</p>
           <p className="text-xs text-slate-500 mt-0.5 truncate">
-            {project.address || `${project.latitude?.toFixed(4)}, ${project.longitude?.toFixed(4)}`}
+            {project.address || `${Number(project.latitude).toFixed(4)}, ${Number(project.longitude).toFixed(4)}`}
           </p>
           <div className="flex items-center gap-2 mt-1">
             <div className="flex-1 bg-slate-700 rounded-full h-1">
